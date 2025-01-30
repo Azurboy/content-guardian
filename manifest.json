@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "内容过滤器",
+  "version": "1.0",
+  "description": "自动过滤网页中的不当内容",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
